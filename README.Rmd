@@ -1,0 +1,29 @@
+---
+title: "Exercises1"
+output: pdf_document
+---
+
+##
+Operation system: MacOS
+
+R : Latest Version
+
+Latex : Latest Version
+
+## Problems you encountered
+
+1. Install Packages
+
+2. Needed System 
+
+3. Needed font style
+
+## How you solved them
+
+1. There are lot of packages required. Usually, you can install the packages from CRAN, but you need to install some of them from github. You can check where the packages come from in advanced R programming(2.introduction -> 2.9 colophon). To install the packges in github, you have to install the 'devtools' package first in CRAN. Then use 'devtool::install_github()' to intall. For example, if you want to install 'emo', then use 'devtool::install_github('hadley/emo')'.
+
+2. I think you need the 'XQuartz' system to make the table in 2.9 Colophon of the book. So, you need to install that system.
+
+3. In my case, when I tried to convert it to the pdf file, I chaged the command to 'knit: "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"' in index.Rmd. Becuase 'Inconsolata' which is the font style is required, I downloaded the font style and then I put that file into the font folder in my computer's library.
+
+
